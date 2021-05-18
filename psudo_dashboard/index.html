@@ -4,10 +4,60 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite App</title>
+    <title>Psudo-dashboard</title>
   </head>
   <body>
-    <div id="app"></div>
+    <h1>Psudo-dashboard</h1>
+
+    <div id="dashboard">
+      <div id="bartenders">
+        <h2>Bartenders</h2>
+        <template id="bartender">
+          <div id="bartender_">
+            <p class="name">Name:</p>
+            <p class="status">Status:</p>
+            <p class="statusDetail">Detail:</p>
+            <p class="usingTap">Using tap:</p>
+            <p class="servingCustomer">Serving Customer:</p>
+          </div>
+        </template>
+      </div>
+
+      <div id="taps">
+        <h2>Taps</h2>
+        <template id="tap">
+          <div id="tap_">
+            <p class="id">Id:</p>
+            <p class="level">Level:</p>
+            <p class="capacity">Capacity:</p>
+            <p class="beer">Beer:</p>
+            <p class="inUse">In Use:</p>
+          </div>
+        </template>
+      </div>
+
+      <div id="serving">
+        <h2>Being served</h2>
+        <ul id="serving_list"></ul>
+        <template id="customer">
+          <li>id: <span class="id"></span> - order: <span class="order"></span></li>
+        </template>
+      </div>
+
+      <div id="queue">
+        <h2>Queue</h2>
+        <ol id="queue_list"></ol>
+      </div>
+
+      <div id="storage">
+        <h2>Storage</h2>
+        <ul id="storage_list"></ul>
+        <template id="storage_keg">
+          <li><span class="beertype"></span>: <span class="amount"></span> kegs</li>
+        </template>
+      </div>
+    </div>
+
     <script type="module" src="/main.js"></script>
   </body>
 </html>
