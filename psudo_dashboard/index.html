@@ -10,32 +10,39 @@
     <h1>Psudo-dashboard</h1>
 
     <div id="dashboard">
-      <div id="bartenders">
-        <h2>Bartenders</h2>
-        <template id="bartender">
-          <div id="bartender_">
-            <p class="name">Name:</p>
-            <p class="status">Status:</p>
-            <p class="statusDetail">Detail:</p>
-            <p class="usingTap">Using tap:</p>
-            <p class="servingCustomer">Serving Customer:</p>
-          </div>
-        </template>
+      <div id="left">
+        <div id="bartenders">
+          <h2>Bartenders</h2>
+          <template id="bartender">
+            <div id="bartender_">
+              <p>
+                Name: <span class="name"></span><br />
+                Status: <span class="status"></span><br />
+                Detail: <span class="statusDetail"></span><br />
+                Using tap: <span class="usingTap"></span><br />
+                Serving Customer: <span class="servingCustomer"></span>
+              </p>
+            </div>
+          </template>
+        </div>
+
+        <div id="taps">
+          <h2>Taps</h2>
+          <template id="tap">
+            <div id="tap_">
+              <p>
+                Id: <span class="id"></span><br />
+                Level: <span class="level"></span><br />
+                Capacity: <span class="capacity"></span><br />
+                Beer: <span class="beer"></span><br />
+                In Use: <span class="inUse"></span>
+              </p>
+            </div>
+          </template>
+        </div>
       </div>
 
-      <div id="taps">
-        <h2>Taps</h2>
-        <template id="tap">
-          <div id="tap_">
-            <p class="id">Id:</p>
-            <p class="level">Level:</p>
-            <p class="capacity">Capacity:</p>
-            <p class="beer">Beer:</p>
-            <p class="inUse">In Use:</p>
-          </div>
-        </template>
-      </div>
-
+      <div id="right"></div>
       <div id="serving">
         <h2>Being served</h2>
         <ul id="serving_list"></ul>
